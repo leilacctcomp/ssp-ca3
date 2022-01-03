@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
-<shoppingList> //menu
-    <listType name="Basic beauty itens"> //section
-        <itemType> //entry
+<shoppingList>
+    <listType name="Basic beauty itens">
+        <itemType>
             <item>Acne spot treatment</item>
             <price>28.95</price>
         </itemType>
@@ -18,8 +18,8 @@
             <price></price>
         </itemType>
     </listType>
-        <listType name="Essential beauty itens"> //section
-        <itemType> //entry
+        <listType name="Essential beauty itens">
+        <itemType>
             <item>Lipstick in Sunrise Red</item>
             <price>40.00</price>
         </itemType>
@@ -36,8 +36,8 @@
             <price>78.40</price>
         </itemType>
     </listType>
-        <listType name="Luxury beauty itens"> //section
-        <itemType> //entry
+        <listType name="Luxury beauty itens">
+        <itemType>
             <item>Cream blush</item>
             <price>89.00</price>
         </itemType>
