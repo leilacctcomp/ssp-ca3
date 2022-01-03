@@ -1,5 +1,5 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
-<list> //menu
+<shoppingList> //menu
     <listType name="Basic beauty itens"> //section
         <itemType> //entry
             <item>Acne spot treatment</item>
@@ -17,7 +17,7 @@
             <item>Mist-to-mousse hairspray</item>
             <price></price>
         </itemType>
-    <listType/>
+    </listType>
         <listType name="Essential beauty itens"> //section
         <itemType> //entry
             <item>Lipstick in Sunrise Red</item>
@@ -35,7 +35,7 @@
             <item>Multi-Purpose Dry Oil</item>
             <price>78.40</price>
         </itemType>
-    <listType/>
+    </listType>
         <listType name="Luxury beauty itens"> //section
         <itemType> //entry
             <item>Cream blush</item>
@@ -53,5 +53,5 @@
             <item>Deep tissue massage</item>
             <price>138.00</price>
         </itemType>
-    <listType/>
-</list>
+    </listType>
+</shoppingList>
