@@ -11,6 +11,17 @@ const http = require('http'), //We need this module to create the HTTP server
             server = http.createServer(router);
 
       router.get('/', function(req, res){
+            res._writeHead(200, {'Content-Type' : 'text/html'}); //This tell the browser to wait for the content which will be the HTML type
+            
+            let xml = fs.readFileSync('BeautyShoppingList.xml', 'utf8'), //The variable let is needed to read the XML and XSL files
+                xsl =   fs.readFileSync('BeautyShoppingList.xsl', 'utf8');
+
+            let doc = xmlParse(xml), //We need this to parse the files (that became string after being read) to turn them  into object that we can work with
+                stylesheet = xmlParse(xsl);
+                
+            let = result xsltProcess(doc, stylesheet); //Aplying the transformation
+            
+            res.end(result.toString()); //This is needed to transform the xml back to string
 
       });
       
