@@ -27,7 +27,7 @@ function draw_table()
 	};
 	$.getJSONuncached("/get/html") //Sending the request for the HTML ending point
 };
-
+/*This function triggers the delete row with the item number */
 function select_row()
 {
 	$("#menuTable tbody tr[id]").click(function ()

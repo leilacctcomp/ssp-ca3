@@ -41,7 +41,7 @@ td, th {
 th {
     font-weight: bold;
 }
-
+/*This style ticks red when an item is selected to be deleted on the page*/
 .selected {
             background-color: #dc3545;
             color: #FFF;
