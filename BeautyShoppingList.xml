@@ -1,59 +1,57 @@
-<!--This project coding was developed during the server side programing lectures
-given by the lecturer Mikhail(https://github.com/mikhail-cct/ssp-practical)-->
-<?xml version = "1.0" encoding = "UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <menu>
-    <section name="Basic beauty items">
-        <entry>
-            <item>Acne spot treatment</item>
-            <price>28.95</price>
-        </entry>
-        <entry>
-            <item>Instant skin perfector</item>
-            <price>20.00</price>
-        </entry>
-        <entry>
-            <item>Eyeshadow pallete</item>
-            <price>51.00</price>
-        </entry>
-        <entry>
-            <item>Mist-to-mousse hairspray</item>
-            <price></price>
-        </entry>
-    </section>
-        <section name="Essential beauty items">
-        <entry>
-            <item>Lipstick in Sunrise Red</item>
-            <price>40.00</price>
-        </entry>
-        <entry>
-            <item>Eyeliner</item>
-            <price>16.90</price>
-        </entry>
-        <entry>
-            <item>Hair pomade</item>
-            <price>36.00</price>
-        </entry>
-        <entry>
-            <item>Multi-Purpose Dry Oil</item>
-            <price>78.40</price>
-        </entry>
-    </section>
-        <section name="Luxury beauty items">
-        <entry>
-            <item>Cream blush</item>
-            <price>89.00</price>
-        </entry>
-        <entry>
-            <item>Brightening moisture mask</item>
-            <price>150.00</price>
-        </entry>
-        <entry>
-            <item>Oxygen facial</item>
-            <price>178.00</price>
-        </entry>
-        <entry>
-            <item>Deep tissue massage</item>
-            <price>138.00</price>
-        </entry>
-    </section>
+  <section name="Basic beauty items">
+    <entry>
+      <item>Acne spot treatment</item>
+      <price>28.95</price>
+    </entry>
+    <entry>
+      <item>Instant skin perfector</item>
+      <price>20.00</price>
+    </entry>
+    <entry>
+      <item>Eyeshadow pallete</item>
+      <price>51.00</price>
+    </entry>
+    <entry>
+      <item>Mist-to-mousse hairspray</item>
+      <price/>
+    </entry>
+  </section>
+  <section name="Essential beauty items">
+    <entry>
+      <item>Lipstick in Sunrise Red</item>
+      <price>40.00</price>
+    </entry>
+    <entry>
+      <item>Eyeliner</item>
+      <price>16.90</price>
+    </entry>
+    <entry>
+      <item>Hair pomade</item>
+      <price>36.00</price>
+    </entry>
+    <entry>
+      <item>Multi-Purpose Dry Oil</item>
+      <price>78.40</price>
+    </entry>
+  </section>
+  <section name="Luxury beauty items">
+    <entry>
+      <item>Cream blush</item>
+      <price>89.00</price>
+    </entry>
+    <entry>
+      <item>Brightening moisture mask</item>
+      <price>150.00</price>
+    </entry>
+    <entry>
+      <item>Oxygen facial</item>
+      <price>178.00</price>
+    </entry>
+    <entry>
+      <item>Deep tissue massage</item>
+      <price>138.00</price>
+    </entry>
+  </section>
 </menu>
