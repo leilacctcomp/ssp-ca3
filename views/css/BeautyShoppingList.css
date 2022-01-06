@@ -23,7 +23,7 @@ background-color: #f5f5f5;
 
 table, th, td {
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 1px solid rgb(136, 7, 7);
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #ced4da;
+    border: 1px solid #cedad7;
     padding: 0.5rem;
     text-align: left;
 }
@@ -43,6 +43,6 @@ th {
 }
 /*This style ticks red when an item is selected to be deleted on the page*/
 .selected {
-            background-color: #dc3545;
+            background-color: #eb0b21;
             color: #FFF;
 }
