@@ -1,6 +1,5 @@
 /*This project coding was developed during the server side programing lectures
-*given by the lecturer Mikhail
-*
+given by the lecturer Mikhail(https://github.com/mikhail-cct/ssp-practical)
 *This script runs when the page is opened
 *Creates the AJAX requests asking the ending point for the information
 *Takes the information and injects it into the results 

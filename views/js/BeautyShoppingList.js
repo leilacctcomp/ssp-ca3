@@ -1,5 +1,6 @@
-//This project coding was developed during the server side programing lectures
-//given by the lecturer Mikhail
+/*This project coding was developed during the server side programing lectures
+given by the lecturer Mikhail(https://github.com/mikhail-cct/ssp-practical)*/
+
 var gEntreeCount = 0;
 // returns a number that represents the sum of all the selected menu
 // item prices.
