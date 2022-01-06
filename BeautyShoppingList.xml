@@ -1,59 +1,59 @@
 <!--This project coding was developed during the server side programing lectures
 given by the lecturer Mikhail(https://github.com/mikhail-cct/ssp-practical)-->
 <?xml version = "1.0" encoding = "UTF-8" ?>
-<shoppingList>
-    <listType name="Basic beauty items">
-        <itemType>
+<menu>
+    <section name="Basic beauty items">
+        <entry>
             <item>Acne spot treatment</item>
             <price>28.95</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Instant skin perfector</item>
             <price>20.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Eyeshadow pallete</item>
             <price>51.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Mist-to-mousse hairspray</item>
             <price></price>
-        </itemType>
-    </listType>
-        <listType name="Essential beauty items">
-        <itemType>
+        </entry>
+    </section>
+        <section name="Essential beauty items">
+        <entry>
             <item>Lipstick in Sunrise Red</item>
             <price>40.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Eyeliner</item>
             <price>16.90</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Hair pomade</item>
             <price>36.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Multi-Purpose Dry Oil</item>
             <price>78.40</price>
-        </itemType>
-    </listType>
-        <listType name="Luxury beauty items">
-        <itemType>
+        </entry>
+    </section>
+        <section name="Luxury beauty items">
+        <entry>
             <item>Cream blush</item>
             <price>89.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Brightening moisture mask</item>
             <price>150.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Oxygen facial</item>
             <price>178.00</price>
-        </itemType>
-        <itemType>
+        </entry>
+        <entry>
             <item>Deep tissue massage</item>
             <price>138.00</price>
-        </itemType>
-    </listType>
-</shoppingList>
+        </entry>
+    </section>
+</menu>
