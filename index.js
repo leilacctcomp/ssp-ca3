@@ -16,12 +16,12 @@ const http = require('http'), //We need this module to create the HTTP server
             let xml = fs.readFileSync('BeautyShoppingList.xml', 'utf8'), //The variable let is needed to read the XML and XSL files
                 xsl =   fs.readFileSync('BeautyShoppingList.xsl', 'utf8');
 
-            let doc = xmlParse(xml), //We need this to parse the files (that became string after being read) to turn them  into object that we can work with
+            let doc = xmlParse(xml), //We need this to parse the files (that became string after being read) to turn them  into objects that we can work with
                 stylesheet = xmlParse(xsl);
                 
-            let = result xsltProcess(doc, stylesheet); //Aplying the transformation
+            let result = xsltProcess(doc, stylesheet); //Aplying the transformation after getting the objects
             
-            res.end(result.toString()); //This is needed to transform the xml back to string
+            res.end(result.toString()); //This is needed to transform the xml to string to serve it back as HTML page
 
       });
       
@@ -29,4 +29,4 @@ const http = require('http'), //We need this module to create the HTTP server
             const addr = server.address();
             Console.log("server listening at", addr.address + ":" + addr.port)
             
-      })
+      });
