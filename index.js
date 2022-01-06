@@ -10,7 +10,7 @@ const http = require('http'), //We need this module to create the HTTP server
       const router = express(),
             server = http.createServer(router);
 
-      router.get('/', function(req, res){
+      router.get('/get/html', function(req, res){
             res._writeHead(200, {'Content-Type' : 'text/html'}); //This tell the browser to wait for the content which will be the HTML type
             
             let xml = fs.readFileSync('BeautyShoppingList.xml', 'utf8'), //The variable let is needed to read the XML and XSL files

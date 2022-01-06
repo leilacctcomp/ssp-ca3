@@ -1,23 +1,31 @@
-//This project coding was developed during the server side programing lectures
-//given by the lecturer Mikhail
+/*This project coding was developed during the server side programing lectures
+*given by the lecturer Mikhail
+*
+*This script runs when the page is opened
+*Creates the AJAX requests asking the ending point for the information
+*Takes the information and injects it into the results 
+*/
+
 function draw_table()
 {
 	$("#results").empty();
-	$.getJSONuncached = function (url)
+	$.getJSONuncached = function (url) /*Uncached to get new results every time the page is ran*/
 	{
+		//To return the results of th AJAX requests
 		return $.ajax(
 		{
-			url: url,
-			type: 'GET',
-			cache: false,
-			success: function (html)
+			url: url, //This is the ending pointing for the AJAX requests 
+			type: 'GET', //This is the HTTP type
+			cache: false, //No cache for the browser level
+			success: function (html) //This function is called if the request is succesful
+			//trowing in the HTML result got from the server
 			{
-				$("#results").append(html);
+				$("#results").append(html); //Injecting the HTML into the div created earlier
 				select_row();
 			}
 		});
 	};
-	$.getJSONuncached("/get/html")
+	$.getJSONuncached("/get/html") //Sending the request for the HTML ending point
 };
 
 function select_row()
