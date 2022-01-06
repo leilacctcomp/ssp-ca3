@@ -21,9 +21,9 @@ given by the lecturer Mikhail(https://github.com/mikhail-cct/ssp-practical)-->
                 <xsl:for-each select="entry">
                     <tr id="{position()}">
 
-                        <!--<xsl:attribute name="vegetarian">
-                            <xsl:value-of select="boolean(@vegetarian)" />
-                        </xsl:attribute>-->
+                        <xsl:attribute name="budget">
+                            <xsl:value-of select="boolean(@budget)" />
+                        </xsl:attribute>
                         
                         <td align="center">
                             <input name="item0" type="checkbox" />

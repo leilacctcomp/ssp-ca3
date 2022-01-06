@@ -29,20 +29,20 @@ function calculateBill(idMenuTable) {
     // return the price as a decimal number with 2 decimal places
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
-// This function either turns on or off the row highlighting for vegetarian
-// items (depending on the value of bShowVeg)
-function highlightVegetarian(idTable, bShowVeg) {
-    // if bShowVeg is true, then we're highlighting vegetarian
+// This function either turns on or off the row highlighting for budget
+// items (depending on the value of bShowBug)
+function highlightBudget(idTable, bShowBug) {
+    // if bShowBug is true, then we're highlighting budget
     //	meals, otherwise we're unhighlighting them.
     var i = 0;
     var oTable = document.getElementById(idTable);
     var oTBODY = oTable.getElementsByTagName('TBODY')[0];
     var aTRs = oTBODY.getElementsByTagName('TR');
     // walk through each of the table rows and see if it has a 
-    // "vegetarian" attribute on it.
+    // "budget" attribute on it.
     for (i = 0; i < aTRs.length; i++) {
-        if (aTRs[i].getAttribute('vegetarian') && aTRs[i].getAttribute('vegetarian') == "true") {
-            if (bShowVeg) {
+        if (aTRs[i].getAttribute('budget') && aTRs[i].getAttribute('budget') == "true") {
+            if (bShowBug) {
                 aTRs[i].style.backgroundColor = "lightGreen";
             } else {
                 aTRs[i].style.backgroundColor = "";
@@ -66,7 +66,7 @@ window.addEventListener("load", function () {
     document.querySelector("#calcBill").addEventListener("click", function () {
         document.forms[0].txtBillAmt.value = calculateBill('menuTable');
     });
-    document.querySelector("#showVeg").addEventListener("click", function () {
+    document.querySelector("#showBug").addEventListener("click", function () {
         highlightVegetarian('menuTable', this.checked);
     });
 });
