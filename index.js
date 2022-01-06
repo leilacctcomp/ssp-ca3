@@ -38,10 +38,10 @@ router.get('/get/html', function (req, res) {
       res.writeHead(200, { 'Content-Type': 'text/html' }); //This tell the browser to wait for the content which will be the HTML type
 
       let xml = fs.readFileSync('BeautyShoppingList.xml', 'utf8'), //The variable let is needed to read the XML and XSL files
-            xsl = fs.readFileSync('BeautyShoppingList.xsl', 'utf8');
+          xsl = fs.readFileSync('BeautyShoppingList.xsl', 'utf8');
 
       let doc = xmlParse(xml), //We need this to parse the files (that became string after being read) to turn them  into objects that we can work with
-            stylesheet = xmlParse(xsl);
+          stylesheet = xmlParse(xsl);
 
       let result = xsltProcess(doc, stylesheet); //Aplying the transformation after getting the objects
 
@@ -99,8 +99,8 @@ router.post('/post/delete', function (req, res) {
 
       res.redirect('back');
 });
-server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function () {
+//This allows the server to listen to the requests
+server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
       const addr = server.address();
-      Console.log("server listening at", addr.address + ":" + addr.port)
-
+      console.log("Server listening at", addr.address + ":" + addr.port)
 });
